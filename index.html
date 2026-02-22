@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GoldWise India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>GoldWise India</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="gold-etf.html">Gold ETF</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Invest in Gold Smartly</h2>
+    <p>Learn about Gold ETF, Sovereign Gold Bonds and smart investing.</p>
+</section>
+
+<section class="calculator">
+    <h2>Gold Price Calculator</h2>
+    <input type="number" id="goldRate" placeholder="Rate per gram">
+    <input type="number" id="grams" placeholder="Grams">
+    <button onclick="calculateGold()">Calculate</button>
+    <h3 id="goldResult"></h3>
+
+    <h2>EMI Calculator</h2>
+    <input type="number" id="loanAmount" placeholder="Loan Amount">
+    <input type="number" id="interestRate" placeholder="Interest Rate (%)">
+    <input type="number" id="loanTenure" placeholder="Tenure (Months)">
+    <button onclick="calculateEMI()">Calculate EMI</button>
+    <h3 id="emiResult"></h3>
+
+    <h2>SIP Calculator</h2>
+    <input type="number" id="sipAmount" placeholder="Monthly Investment">
+    <input type="number" id="sipRate" placeholder="Return (%)">
+    <input type="number" id="sipYears" placeholder="Years">
+    <button onclick="calculateSIP()">Calculate SIP</button>
+    <h3 id="sipResult"></h3>
+</section>
+
+<footer>
+    <p>© 2026 GoldWise India</p>
+</footer>
+
+<script src="calculator.js"></script>
+</body>
+</html>
