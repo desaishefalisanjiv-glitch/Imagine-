@@ -1,38 +1,75 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-    <h1>Contact Us</h1>
-</header>
+<div class="container">
+    <h2>Contact Me</h2>
 
-<form action="https://formspree.io/f/
-    
+    <form action="https://formspree.io/f/xqedvawy" method="POST">
+        
+        <input type="text" name="name" placeholder="Your Name" required>
+        
+        <input type="email" name="email" placeholder="Your Email" required>
+        
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-<h2>Contact Us</h2>
-<p>Email: <a href="mailto:wecare@bajajfinserv.in">wecare@bajajfinserv.in</a></p>
+        <button type="submit">Send Message</button>
 
-    " method="POST" class="form">
-
-
-
-
-
-
-    <input type="text by" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message"></textarea>
-    <button type="submit">Send</button>
-
-
-<h2>Contact Us</h2>
-<p>Email: <a href="mailto:wecare@bajajfinserv.in">wecare@bajajfinserv.in</a></p>
-
-</form>
+    </form>
+</div>
 
 </body>
 </html>
